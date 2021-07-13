@@ -105,16 +105,16 @@ namespace MakingABotPlayFridayNightFunkinBecauseImBadAtIt
 
 			graphics.DrawLine(xLinePen, x1, y, x2, y);
 
-			Pen leftLinePen = new Pen(Color.Purple, 5);
+			Pen leftLinePen = new Pen(LEFT_COLOR, 5);
 			graphics.DrawLine(leftLinePen, GetLeftX(), 0, GetLeftX(), height);
 
-			Pen downLinePen = new Pen(Color.Aqua, 5);
+			Pen downLinePen = new Pen(DOWN_COLOR, 5);
 			graphics.DrawLine(downLinePen, GetDownX(), 0, GetDownX(), height);
 
-			Pen upLinePen = new Pen(Color.Lime, 5);
+			Pen upLinePen = new Pen(UP_COLOR, 5);
 			graphics.DrawLine(upLinePen, GetUpX(), 0, GetUpX(), height);
 
-			Pen rightLinePen = new Pen(Color.Red, 5);
+			Pen rightLinePen = new Pen(RIGHT_COLOR, 5);
 			graphics.DrawLine(rightLinePen, GetRightX(), 0, GetRightX(), height);
 
 			//Console.WriteLine("Painted. Y: " + y + " Height: " + this.Height + " ClientSize.Height: " + this.ClientSize.Height);
