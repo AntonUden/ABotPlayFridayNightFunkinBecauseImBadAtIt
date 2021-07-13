@@ -16,7 +16,7 @@ namespace MakingABotPlayFridayNightFunkinBecauseImBadAtIt
 	public partial class FNFBot : Form
 	{
 		public static Color LEFT_COLOR = Color.FromArgb(194, 75, 153);
-		public static Color DOWN_COLOR = Color.FromArgb(21, 66, 183);
+		public static Color DOWN_COLOR = Color.FromArgb(21, 255, 255);
 		public static Color UP_COLOR = Color.FromArgb(18, 250, 5);
 		public static Color RIGHT_COLOR = Color.FromArgb(249, 57, 63);
 
