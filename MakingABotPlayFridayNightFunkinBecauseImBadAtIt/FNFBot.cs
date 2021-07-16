@@ -44,6 +44,7 @@ namespace MakingABotPlayFridayNightFunkinBecauseImBadAtIt
 
 			ControlForm = new ControlForm();
 			ControlForm.ControlEvent += ControlForm_ControlEvent;
+			ControlForm.ColorEvent += ControlForm_ColorEvent;
 			ControlForm.Show();
 
 			timer = new Timer();
@@ -53,6 +54,30 @@ namespace MakingABotPlayFridayNightFunkinBecauseImBadAtIt
 			timer.Start();
 
 			this.TopMost = true;
+		}
+
+		private void ControlForm_ColorEvent(object sender, SetColorEventArgs e)
+		{
+			switch(e.Direction)
+			{
+				case Direction.UP:
+					UP_COLOR = e.Color;
+					break;
+
+				case Direction.DOWN:
+					DOWN_COLOR = e.Color;
+					break;
+
+				case Direction.LEFT:
+					LEFT_COLOR = e.Color;
+					break;
+
+				case Direction.RIGHT:
+					RIGHT_COLOR = e.Color;
+					break;
+			}
+
+			ForcePaint(this);
 		}
 
 		private void Timer_Tick(object sender, EventArgs e)

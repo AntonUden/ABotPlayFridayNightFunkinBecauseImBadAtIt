@@ -52,7 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SetColorEventArgs.cs" />
     <Compile Include="ControlEventArgs.cs" />
+    <Compile Include="Direction.cs" />
     <Compile Include="FNFBot.cs">
       <SubType>Form</SubType>
     </Compile>
